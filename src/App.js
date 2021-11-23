@@ -13,7 +13,7 @@ class App extends Component {
       dishes: STAFFS
     };
   }
-  
+
   render() {
     return (
       <div className="App">

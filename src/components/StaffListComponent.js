@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Card, CardImgOverlay, CardText, CardBody,
   CardTitle } from 'reactstrap';
-import dateFormat from 'dateformat'; 
+// import dateFormat from 'dateformat';
 
 class Menu extends Component {
 
   constructor(props) {
       super(props);
-
       this.state = {
           selectedDish: null
       }
@@ -24,7 +23,7 @@ class Menu extends Component {
                     <CardText><b>{'Họ và tên: ' + dish.name}</b></CardText>
                     <CardText>{'Ngày sinh: ' + dish.doB}</CardText>
                     <CardText>{'Ngày vào công ty: ' + dish.startDate}</CardText>
-                    <CardText>{'Phòng ban: '}</CardText>
+                    <CardText>{'Phòng ban: ' + dish.department.name}</CardText>
                     <CardText>{'Số ngày nghỉ còn lại: ' + dish.annualLeave}</CardText>
                     <CardText>{'Số ngày đã làm thêm: ' + dish.overTime}</CardText>
                   </CardBody>
@@ -34,7 +33,7 @@ class Menu extends Component {
               <div>Bấm vào tên nhân viên để xem thông tin</div>
           );
   }
-
+  
   render() {
       const menu = this.props.dishes.map((dish) => {
           return (
