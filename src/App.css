@@ -6,19 +6,19 @@ body {
     display: block;
     padding: 0;
 }
-#root {
+.row {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
-    #root {
+    .row {
         width: 984px;
     }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-    #root {
+    .row {
         width: 644px;
     }
 }
