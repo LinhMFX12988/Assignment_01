@@ -16,10 +16,94 @@ body {
   margin-top: 50px;
 }
 
-@media (min-width: 1024px) and (max-width: 1239px) {
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 2000px) {  
+    body {
+        text-align: center;
+        background-color: ghostwhite;
+      }
+      .container {
+        padding: 0;
+      }
+      .col-xl-4 {
+        padding: 0;
+      }
+      .card {
+        margin-top: 5px;
+        background-color: rgba(255, 255, 220, 0.651);
+        margin: 10px 15px;
+        padding: 20px;       
+      }
+      .bg-primary {
+        margin-bottom: 30px;
+        background-color: rgb(251, 255, 42) !important;
+      }
+      .navbar {
+        display: block;
+      }  
+      .navbar-dark .navbar-brand {
+        font-size: 200%;
+        color: rgb(233, 7, 7);
+      }
+      .navbar .container {
+        display: block;
+        font-weight: bold;
+      }
+      .card-body {
+        border: 1px solid rgb(209, 209, 209);
+        margin-top: 20px;
+        background-color: rgba(255, 255, 220, 0.651);
+        border-radius: .25rem;
+      }
+      .card-title:hover {
+        color: red;
+        font-size: 150%;
+      }
 }
 
+/* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    body {
+        text-align: center;
+        background-color: ghostwhite;
+      }
+      .container {
+        padding: 0;
+      }
+      .col-xl-4 {
+        padding: 0;
+      }
+      .card {
+        margin-top: 5px;
+        background-color: rgb(213, 253, 252);
+        margin: 10px 15px;
+        padding: 10px;
+        
+      }
+      .bg-primary {
+        margin-bottom: 30px;
+        background-color: rgb(12, 250, 250) !important;
+      }
+      .navbar {
+        display: block;
+      }  
+      .navbar-dark .navbar-brand {
+        font-size: 150%;
+        color: rgb(233, 7, 7);
+      }
+      .navbar .container {
+        display: block;
+        font-weight: bold;
+      }
+      .card-body {
+        border: 1px solid rgb(209, 209, 209);
+        margin-top: 20px;
+        background-color: rgb(213, 253, 252);
+        border-radius: .25rem;
+      }
+      .card-title:hover {
+        color: red;
+      }
 }
 /* Mobile */
 @media (max-width: 739px) {
@@ -33,9 +117,12 @@ body {
   .col-xl-4 {
     padding: 0;
   }
+  .col-12 {
+    padding: 0;
+  }
   .card {
     margin-top: 5px;
-    background-color: rgb(197, 240, 180);
+    background-color: rgb(227, 255, 215);
   }
   .bg-primary {
     margin-bottom: 30px;
@@ -55,7 +142,8 @@ body {
   .card-body {
     border: 1px solid rgb(209, 209, 209);
     margin-top: 20px;
-    /* background-color: #dff9ff; */
+    background-color: rgb(227, 255, 215);
+    border-radius: .25rem;
   }
   .card-title:hover {
     color: red;
