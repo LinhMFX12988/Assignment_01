@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImgOverlay, CardText, CardBody,
+import { Card, CardText, CardBody,
   CardTitle } from 'reactstrap';
 import dateFormat from 'dateformat';
 
@@ -38,11 +38,8 @@ class Menu extends Component {
           return (
             <div className="col- col-md-6 col-xl-4">
               <Card key={staffs.id}
-                onClick={() => this.onDishSelect(staffs)}>
-                
-                <CardImgOverlay>
-                    <CardTitle>{staffs.name}</CardTitle>
-                </CardImgOverlay>
+                onClick={() => this.onDishSelect(staffs)}>               
+                    <CardTitle>{staffs.name}</CardTitle>              
               </Card>
             </div>
           );
