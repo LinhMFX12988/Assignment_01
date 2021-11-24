@@ -10,15 +10,32 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.card-img-overlay {
+    position: static;
+    padding: 0.5rem;
+    margin-top: 50px;
+}
+.container {
+    display: block;
+}
 @media (min-width: 1024px) and (max-width: 1239px) {
-    .row {
-        width: 984px;
-    }
+   
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-    .row {
-        width: 644px;
+    
+}
+@media (max-width: 739px) {
+    body {
+        text-align: center;
+    }
+    .container {
+        padding: 0;
+    }
+    .col-xl-4 {
+        padding: 0;
+    }
+    .card {
+        margin-top: 40px;
     }
 }
