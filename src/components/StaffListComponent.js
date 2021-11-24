@@ -21,10 +21,10 @@ class Menu extends Component {
                   <CardBody>
                     <h3>{'Họ và tên: ' + dish.name}</h3>
                     <CardText>{'Ngày sinh: ' + dateFormat(dish.doB, "dd/mm/yyyy")}</CardText>
-                    {/* <CardText>{'Ngày vào công ty: ' + dateFormat(dish.startDate, "dd/mm/yyyy")}</CardText>
+                    <CardText>{'Ngày vào công ty: ' + dateFormat(dish.startDate, "dd/mm/yyyy")}</CardText>
                     <CardText>{'Phòng ban: ' + dish.department.name}</CardText>
                     <CardText>{'Số ngày nghỉ còn lại: ' + dish.annualLeave}</CardText>
-                    <CardText>{'Số ngày đã làm thêm: ' + dish.overTime}</CardText> */}
+                    <CardText>{'Số ngày đã làm thêm: ' + dish.overTime}</CardText>
                   </CardBody>
           );
       else
