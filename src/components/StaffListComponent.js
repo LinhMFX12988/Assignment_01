@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardImgOverlay, CardText, CardBody,
   CardTitle } from 'reactstrap';
-// import dateFormat from 'dateformat';
+import dateFormat from 'dateformat';
 
 class Menu extends Component {
 
@@ -15,17 +15,16 @@ class Menu extends Component {
   onDishSelect(dish) {
       this.setState({ selectedDish: dish});
   }
-
-  renderDish(dish) {
+  renderDish(dish) {      
       if (dish != null)
           return(
                   <CardBody>
-                    <CardText><b>{'Họ và tên: ' + dish.name}</b></CardText>
-                    <CardText>{'Ngày sinh: ' + dish.doB}</CardText>
-                    <CardText>{'Ngày vào công ty: ' + dish.startDate}</CardText>
+                    <h3>{'Họ và tên: ' + dish.name}</h3>
+                    <CardText>{'Ngày sinh: ' + dateFormat(dish.doB, "dd/mm/yyyy")}</CardText>
+                    {/* <CardText>{'Ngày vào công ty: ' + dateFormat(dish.startDate, "dd/mm/yyyy")}</CardText>
                     <CardText>{'Phòng ban: ' + dish.department.name}</CardText>
                     <CardText>{'Số ngày nghỉ còn lại: ' + dish.annualLeave}</CardText>
-                    <CardText>{'Số ngày đã làm thêm: ' + dish.overTime}</CardText>
+                    <CardText>{'Số ngày đã làm thêm: ' + dish.overTime}</CardText> */}
                   </CardBody>
           );
       else
