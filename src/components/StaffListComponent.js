@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
 import dateFormat from 'dateformat';
-import DarkModeToggle from "react-dark-mode-toggle";
+// import DarkModeToggle from "react-dark-mode-toggle";
 // import $ from 'jquery';
 
 class Menu extends Component {
@@ -50,7 +50,7 @@ class Menu extends Component {
     return (
 
       <div className="container">
-        <input type="checkbox" id="toggle-mode-cb" />
+        {/* <input type="checkbox" id="toggle-mode-cb" />
 
         <div id="mode-wrapper">
 
@@ -69,7 +69,7 @@ class Menu extends Component {
             <p>Dark Mode</p>
           </div>
 
-        </div>
+        </div> */}
         <div className="row">
           {menu}
         </div>

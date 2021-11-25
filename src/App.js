@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./components/StaffListComponent";
-// import Sun from "./components/jquery";
-import "./App.scss";
-// import "./components/jquery";
+import Light from "./components/lightMode";
+import "./App.css";
 import { STAFFS } from './shared/staffs';
  
 class App extends Component {
@@ -20,10 +19,11 @@ class App extends Component {
       <div className="App">
         <Navbar dark color="primary">
           <div className="container">
+          <Light /> 
             <NavbarBrand>Ứng dụng quản lí nhân sự v1.0</NavbarBrand>
           </div>
         </Navbar>
-        <Menu dishes={this.state.dishes} />       
+        <Menu dishes={this.state.dishes} />             
       </div>
     );
   }
