@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <Navbar dark color="primary">
           <div className="container">
-            <NavbarBrand href="#">Ứng dụng quản lí nhân sự v1.0</NavbarBrand>
+            <NavbarBrand>Ứng dụng quản lí nhân sự v1.0</NavbarBrand>
           </div>
         </Navbar>
         <Menu dishes={this.state.dishes} />

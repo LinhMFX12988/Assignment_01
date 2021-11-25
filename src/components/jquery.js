@@ -1,12 +1,9 @@
-import React, { Component } from "react";
-// import $ from 'jquery'
+import React from "react";
+import $ from 'jquery'
 
 
-class Sun extends Component {
+function Sun() {
     
-    
-    render() {
-        
         return (
             <div className="btn-">
                 <div className="btn-sun">
@@ -25,5 +22,5 @@ class Sun extends Component {
 
 
     }
-}
+
 export default Sun;
