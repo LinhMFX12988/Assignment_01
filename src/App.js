@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./components/StaffListComponent";
 import "./App.css";
+import "./components/jquery";
 import { STAFFS } from './shared/staffs';
  
 class App extends Component {
