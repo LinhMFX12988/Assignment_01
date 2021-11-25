@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardText, CardBody,
-  CardTitle } from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
 import dateFormat from 'dateformat';
 
 class Menu extends Component {
@@ -36,8 +35,8 @@ class Menu extends Component {
   render() {
       const menu = this.props.dishes.map((staffs) => {
           return (
-            <div className="col- col-md-6 col-xl-4">
-              <Card key={staffs.id}
+            <div key={staffs.id} className="col- col-md-6 col-xl-4">
+              <Card
                 onClick={() => this.onDishSelect(staffs)}>               
                     <CardTitle>{staffs.name}</CardTitle>              
               </Card>
@@ -61,3 +60,4 @@ class Menu extends Component {
 }
 
 export default Menu;
+

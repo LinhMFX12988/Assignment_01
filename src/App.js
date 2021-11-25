@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./components/StaffListComponent";
+import Sun from "./components/jquery";
 import "./App.css";
 import "./components/jquery";
 import { STAFFS } from './shared/staffs';
@@ -23,6 +24,7 @@ class App extends Component {
           </div>
         </Navbar>
         <Menu dishes={this.state.dishes} />
+        <Sun />
       </div>
     );
   }
