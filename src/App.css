@@ -38,119 +38,119 @@ body {
 }
 
 /* Desktop */
-@media (min-width: 1024px) and (max-width: 2000px) {  
-    body {
-        text-align: center;
-        background-color: ghostwhite;
-      }
-      .container {
-        padding: 0;
-      }
-      .col-xl-4 {
-        padding: 0;
-      }
-      .card {
-        margin-top: 5px;
-        background-color: rgba(255, 255, 220, 0.651);
-        margin: 10px 15px;
-        padding: 20px;  
-        transition: ease-out 0.3s;
-        outline: none;
-        position: relative;
-        z-index: 1;     
-      }
-      .card:hover {
-        color: #fff;
-        cursor: pointer;
-      }
-      .card::before {
-        transition: 0.5s all ease;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        opacity: 0;
-        content: '';
-        background-color: #fcff4f;
-      }
-      .card:hover:before {
-        transition: 0.5s all ease;
-        left: 0;
-        right: 0;
-        opacity: 1;
-        z-index: -1;
-      }
-      .bg-primary {
-        margin-bottom: 30px;
-        background-color: rgb(251, 255, 42) !important;
-      }
-      .navbar {
-        display: block;
-      }  
-      .navbar-dark .navbar-brand {
-        font-size: 200%;
-        color: rgb(233, 7, 7);
-      }
-      .navbar .container {
-        display: block;
-        font-weight: bold;
-      }
-      .card-body {
-        border: 1px solid rgb(209, 209, 209);
-        margin-top: 20px;
-        background-color: rgba(255, 255, 220, 0.651);
-        border-radius: .25rem;
-      }
-      .card-title:hover {
-        color: red;
-        font-size: 150%;
-      }
+@media (min-width: 1024px) and (max-width: 3000px) {
+  body {
+    text-align: center;
+    background-color: ghostwhite;
+  }
+  .container {
+    padding: 0;
+  }
+  .col-xl-4 {
+    padding: 0;
+  }
+  .card {
+    margin-top: 5px;
+    background-color: rgb(251, 255, 226);
+    margin: 10px 15px;
+    padding: 20px;
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgb(114, 110, 110);
+  }
+  .card:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  .card::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #fcff4f;
+  }
+  .card:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+  .bg-primary {
+    margin-bottom: 30px;
+    background-color: rgb(251, 255, 42) !important;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar-dark .navbar-brand {
+    font-size: 200%;
+    color: rgb(233, 7, 7);
+  }
+  .navbar .container {
+    display: block;
+    font-weight: bold;
+  }
+  .card-body {
+    border: 1px solid rgb(114, 110, 110);
+    margin-top: 20px;
+    background-color: rgb(251, 255, 226);
+    border-radius: 0.25rem;
+  }
+  .card-title:hover {
+    color: red;
+    font-size: 150%;
+  }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    body {
-        text-align: center;
-        background-color: ghostwhite;
-      }
-      .container {
-        padding: 0;
-      }
-      .col-xl-4 {
-        padding: 0;
-      }
-      .card {
-        margin-top: 5px;
-        background-color: rgb(213, 253, 252);
-        margin: 10px 15px;
-        padding: 10px;
-        
-      }
-      .bg-primary {
-        margin-bottom: 30px;
-        background-color: rgb(12, 250, 250) !important;
-      }
-      .navbar {
-        display: block;
-      }  
-      .navbar-dark .navbar-brand {
-        font-size: 150%;
-        color: rgb(233, 7, 7);
-      }
-      .navbar .container {
-        display: block;
-        font-weight: bold;
-      }
-      .card-body {
-        border: 1px solid rgb(209, 209, 209);
-        margin-top: 20px;
-        background-color: rgb(213, 253, 252);
-        border-radius: .25rem;
-      }
-      .card-title:hover {
-        color: red;
-      }
+  body {
+    text-align: center;
+    background-color: ghostwhite;
+  }
+  .container {
+    padding: 0;
+  }
+  .col-xl-4 {
+    padding: 0;
+  }
+  .card {
+    margin-top: 5px;
+    background-color: rgb(213, 253, 252);
+    margin: 10px 15px;
+    padding: 10px;
+  }
+  .bg-primary {
+    margin-bottom: 30px;
+    background-color: rgb(12, 250, 250) !important;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar-dark .navbar-brand {
+    font-size: 150%;
+    color: rgb(233, 7, 7);
+  }
+  .navbar .container {
+    display: block;
+    font-weight: bold;
+  }
+  .card-body {
+    border: 1px solid rgb(209, 209, 209);
+    margin-top: 20px;
+    background-color: rgb(213, 253, 252);
+    border-radius: 0.25rem;
+  }
+  .card-title:hover {
+    color: red;
+  }
 }
 /* Mobile */
 @media (max-width: 739px) {
@@ -190,7 +190,7 @@ body {
     border: 1px solid rgb(209, 209, 209);
     margin-top: 25px;
     background-color: rgb(227, 255, 215);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
   }
   .card-title:hover {
     color: red;
@@ -213,7 +213,7 @@ span {
 }
 
 .dark-mode {
-  background-color: #1a1919;
+  background-color: #272727;
   color: rgb(0, 0, 0);
   height: 100%;
   transition: background-color 0.25s ease-in-out;
@@ -227,10 +227,9 @@ span {
 }
 
 .container-2 {
-  /* position: fixed; */
-  /* display: flex; */
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .switch {
@@ -307,9 +306,7 @@ input:checked + .slider:before {
 }
 .switch-checkbox {
   padding: 10px;
+  display: inline;
+  position: relative;
+  bottom: 12px;
 }
-
-
-
-
-
