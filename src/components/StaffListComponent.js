@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
 import dateFormat from 'dateformat';
-// import DarkModeToggle from "react-dark-mode-toggle";
-// import $ from 'jquery';
 
 class Menu extends Component {
 
@@ -36,6 +34,7 @@ class Menu extends Component {
   }
 
   render() {
+   
     const menu = this.props.dishes.map((staffs) => {
       return (
         <div key={staffs.id} className="col- col-md-6 col-xl-4">
@@ -48,28 +47,8 @@ class Menu extends Component {
     });
 
     return (
-
-      <div className="container">
-        {/* <input type="checkbox" id="toggle-mode-cb" />
-
-        <div id="mode-wrapper">
-
-          <label id="toggle-mode" htmlFor="toggle-mode-cb">
-            <span className="sr-only">Toggle</span>
-            <span className="toggle-border">
-              <span className="toggle-indicator"></span>
-            </span>
-          </label>
-
-          <div className="mode mode__light">
-            <p>Light Mode</p>
-          </div>
-
-          <div className="mode mode__dark">
-            <p>Dark Mode</p>
-          </div>
-
-        </div> */}
+      
+      <div className="container">            
         <div className="row">
           {menu}
         </div>
@@ -79,6 +58,7 @@ class Menu extends Component {
           </div>
         </div>
       </div>
+      
     );
   }
 }
