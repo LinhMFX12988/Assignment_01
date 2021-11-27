@@ -6,14 +6,15 @@ import { STAFFS } from "./shared/staffs";
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props);   
     this.state = {
       dishes: STAFFS,
       darkMode: false,
     };
   }
+  
   render() {
-    return (
+    return (      
       <div className={this.state.darkMode ? "dark-mode" : "light-mode"}>
         <Navbar dark color="primary">
           <div className="container">
